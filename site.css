@@ -1,0 +1,38 @@
+/* 戰域紀元／Era of the Rift 隱私權政策與支援頁（docs/release.md）。遊戲的米白底、墨色字。 */
+:root {
+  --paper: #fcf5e6;
+  --card: #fff7e6;
+  --ink: #2b2620;
+  --muted: #6e6254;
+  --line: #e3d5b8;
+  --accent: #a8781e;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.7 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 56px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 2px 6px rgba(43, 38, 32, 0.25); }
+header .name { font-size: 15px; color: var(--muted); }
+nav.lang { margin-left: auto; font-size: 15px; white-space: nowrap; }
+nav.lang a { color: var(--muted); text-decoration: none; padding: 4px 8px; border-radius: 999px; }
+nav.lang a[aria-current="true"] { color: var(--ink); background: var(--card); border: 1px solid var(--line); }
+h1 { font-size: 26px; line-height: 1.35; margin: 20px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 6px; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 22px; margin: 0 0 10px; }
+.meta { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 4px 18px 8px; margin-top: 16px; }
+.card h2 { margin-top: 18px; }
+a { color: var(--accent); }
+.todo { background: #f6e3b4; border-radius: 4px; padding: 0 3px; }
+footer { margin-top: 36px; font-size: 14px; color: var(--muted); }
+footer a { color: var(--muted); }
+[data-lang] { display: none; }
+html[lang="zh-Hant"] [data-lang="zh-Hant"], html[lang="en"] [data-lang="en"] { display: block; }
+html[lang="zh-Hant"] span[data-lang="zh-Hant"], html[lang="en"] span[data-lang="en"] { display: inline; }
